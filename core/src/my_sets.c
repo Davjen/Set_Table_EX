@@ -144,6 +144,8 @@ set_table_t *set_table_remove(set_table_t *table, const char *key, const size_t 
             }
         }
         else{
+
+            table->nodes[index]=NULL;
             return head;
         }
         tail = head;
