@@ -135,10 +135,6 @@ set_table_t *set_table_remove(set_table_t *table, const char *key, const size_t 
                     head->next = NULL;
                     head->prev = NULL;
                 }
-                head->prev->next = head->next;
-                head->next->prev = head->prev;
-                head->next = NULL;
-                head->prev = NULL;
 
                 return head;
             }
